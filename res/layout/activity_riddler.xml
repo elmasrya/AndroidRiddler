@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="10dp"
+    android:layout_height="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    tools:context=".RiddlerActivity" >
+
+    <TextView
+        android:id="@+id/headerTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/AnswerTheRiddleStr"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/answerBtn"
+        android:layout_alignBottom="@+id/answerBtn"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/answerBtn"
+        android:text="@string/NextRiddleStr" />
+
+    <Button
+        android:id="@+id/answerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/headerTxt"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/AnswerRiddleStr" />
+
+    <EditText
+        android:id="@+id/answerTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nextBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+     
+        android:background="#CCCCCC"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/riddleTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/answerTxt"
+        android:layout_alignRight="@+id/answerTxt"
+        android:layout_below="@+id/nextBtn"
+        android:layout_marginTop="30dp"
+        android:background="#FFFF00"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+</RelativeLayout>
